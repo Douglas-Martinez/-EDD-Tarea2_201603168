@@ -31,7 +31,6 @@ def graficar(f,c,x,y,k,tipo):
                 grafo += str("<td>")
             grafo += str("(" + str(i)  + "," + str(j) + ")")
             grafo += str("</td>\n")
-            ch += 1
         grafo += str("</tr>\n")
     grafo += str("</table>\n")
     grafo += str(">];\n")
@@ -113,7 +112,7 @@ def mFilas():
     map = x * c + y
     print("Pos en el arreglo: " + str(map))
 
-    #Graficar
+    graficar(f,c,x,y,map,1)
 
     print("")
 
@@ -158,14 +157,13 @@ def mColumnas():
     map = y * f + x
     print("Pos en el arreglo: " + str(map))
 
-    #Graficar
+    graficar(f,c,x,y,map,2)
 
     print("")
 
 if __name__ == "__main__":
     op = -1
-    graficar(2,3,1,1,4,2)
-    '''
+    
     print("Tarea 2 -- 201603168")
     print("Mapeo Lexicografico")
     print("")
@@ -183,4 +181,3 @@ if __name__ == "__main__":
             break
         else:
             print("Opcion invalida")
-    '''
